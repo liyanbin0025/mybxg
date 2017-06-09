@@ -8,7 +8,8 @@ requirejs.config({
         //echarts:"echarts/echarts.min",
         login:"../js/login",
         cookie:"jquery-cookie/jquery.cookie",
-        template:"artTemplate/template-web"
+        template:"artTemplate/template-web",
+        teacher_list:"../js/teacher"
     },
     shim:{
         deps:{
