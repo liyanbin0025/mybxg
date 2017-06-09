@@ -7,7 +7,8 @@ requirejs.config({
         //nprogress:"nprogress/nprogress",
         //echarts:"echarts/echarts.min",
         login:"../js/login",
-        cookie:"jquery-cookie/jquery.cookie"
+        cookie:"jquery-cookie/jquery.cookie",
+        template:"artTemplate/template-web"
     },
     shim:{
         deps:{
