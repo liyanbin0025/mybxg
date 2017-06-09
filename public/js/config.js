@@ -7,6 +7,8 @@ requirejs.config({
         //nprogress:"nprogress/nprogress",
         //echarts:"echarts/echarts.min",
         login:"../js/login",
+        util:"../js/util",
+        index:"../js/index",
         cookie:"jquery-cookie/jquery.cookie",
         template:"artTemplate/template-web",
         teacher_list:"../js/teacher"
