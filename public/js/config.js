@@ -11,6 +11,7 @@ requirejs.config({
         index:"../js/index",
         cookie:"jquery-cookie/jquery.cookie",
         template:"artTemplate/template-web",
+        nprogress:"nprogress/nprogress",
         teacher_list:"../js/teacher"
     },
     shim:{

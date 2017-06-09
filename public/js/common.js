@@ -2,11 +2,13 @@
 	//NProgress.start();
     //
 	//NProgress.done();
-    //
-	//$('.navs ul').prev('a').on('click', function () {
-	//	$(this).next().slideToggle();
-	//});
-	define(["jquery","template","cookie"], function ($,template) {
+
+	define(["jquery","template","nprogress","cookie"], function ($,template,nprogress) {
+		//控制左侧菜单的展开和折叠
+		$('.navs ul').prev('a').on('click', function () {
+			$(this).next().slideToggle();
+		});
+		//退出
 		$("#logout").click(function () {
 			$.ajax({
 				type: "post",
@@ -16,7 +18,7 @@
 					//清空cookie
 					$.removeCookie("loginInfo",{path:"/"});
 					location.href = "/login";
-					console.log($.cookie("loginInfo"));
+					//console.log($.cookie("loginInfo"));
 				}
 			});
 			return false;
@@ -37,4 +39,15 @@
 		else if (pathInfo!="/login") {
 			location.href = "/login";
 		}
+
+		//遮挡层
+		$(document).ajaxStart(function () {
+			$(".overlay").show();
+		});
+		$(document).ajaxStop(function () {
+			$(".overlay").hide();
+		});
+		//进度条
+		nprogress.start();
+		nprogress.done();
 	});
