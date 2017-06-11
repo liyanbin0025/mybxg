@@ -12,12 +12,22 @@ requirejs.config({
         cookie:"jquery-cookie/jquery.cookie",
         template:"artTemplate/template-web",
         nprogress:"nprogress/nprogress",
+        form:"jquery-form/jquery.form",
+        validate:"validate/jquery-validate.min",
+        datepicker:"bootstrap-datepicker/js/bootstrap-datepicker.min",
+        language:"bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min",
         teacher_list:"../js/teacher",
         teacher_operate:"../js/operate"
     },
     shim:{
         bootstrap:{
             deps:["jquery"]
+        },
+        validate:{
+            deps:["jquery"]
+        },
+        language:{
+            deps:["jquery","datepicker"]
         }
     }
 });
