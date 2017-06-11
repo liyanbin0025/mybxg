@@ -30,6 +30,7 @@
 		//}
 		var loginInfo = $.cookie("loginInfo") && JSON.parse($.cookie("loginInfo"));
 		if (loginInfo) {
+			//填充个人数据
 			var infoTPL='<div class="avatar img-circle"><img src="{{tc_avatar}}"> </div><h4>{{tc_name}}</h4>';
             var html=template.render(infoTPL,loginInfo);
             $("#info").html(html);

@@ -12,11 +12,12 @@ requirejs.config({
         cookie:"jquery-cookie/jquery.cookie",
         template:"artTemplate/template-web",
         nprogress:"nprogress/nprogress",
-        teacher_list:"../js/teacher"
+        teacher_list:"../js/teacher",
+        teacher_operate:"../js/operate"
     },
     shim:{
-        deps:{
-            bootstrap:["jquery"]
+        bootstrap:{
+            deps:["jquery"]
         }
     }
 });

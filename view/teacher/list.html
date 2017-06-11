@@ -22,7 +22,7 @@
                     <li class="active">讲师列表</li>
                 </ol>
                 <div class="page-title">
-                    <a href="/index.php/teacher/add" class="btn btn-success btn-sm pull-right">添加讲师</a>
+                    <a href="/teacher/add" class="btn btn-success btn-sm pull-right" id="teacheradd">添加讲师</a>
                 </div>
                 <div class="panel panel-default">
                     <div class="panel-body">
@@ -89,7 +89,7 @@
                 <td>{{$value.tc_cellphone}}</td>
                 <td data-id="{{$value.tc_id}}" data-status="{{$value.tc_status}}">
                     <a href="" data-toggle="modal" class="btn btn-info btn-xs preview">查 看</a>
-                    <a href="./teacher_add.html" class="btn btn-info btn-xs">编 辑</a>
+                    <a href="/teacher/add?tc_id={{$value.tc_id}}" class="btn btn-info btn-xs" id="editTeacher">编 辑</a>
                     <a href="" class="btn btn-warning btn-xs zhuxiao edteacher">{{if $value.tc_status==0}}注 销{{else}}启用{{/if}}</a>
                 </td>
             </tr>

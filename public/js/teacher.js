@@ -28,6 +28,7 @@ define(["jquery","template","util","bootstrap"],function ($,template,util) {
                 dataType:"json",
                 success: function (data) {
                     //console.log(data);
+                    //去除地址之间的“|”
                     data.result.tc_hometown=data.result.tc_hometown.split("|").join(" ");
                     var html=template("teacherModalTpl",data.result);
                     //console.log(html);
