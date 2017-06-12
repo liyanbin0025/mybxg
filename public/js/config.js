@@ -20,7 +20,10 @@ requirejs.config({
         language:"bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min",
         teacher_list:"../js/teacher",
         teacher_operate:"../js/operate",
-        settings:"../js/settings"
+        settings:"../js/settings",
+        courseadd:"../js/course-add",
+        coursebasic:"../js/course-basic",
+        courselist:"../js/course-list"
     },
     shim:{
         bootstrap:{
