@@ -3,8 +3,10 @@ requirejs.config({
     paths:{
         jquery:"jquery/jquery.min",
         bootstrap:"bootstrap/js/bootstrap.min",
+        upload:"upload/jquery.uploadify.min",
         common:"../js/common",
-        //nprogress:"nprogress/nprogress",
+        region:"jquery-region/jquery.region",
+        ckeditor:"ckeditor/ckeditor",
         //echarts:"echarts/echarts.min",
         login:"../js/login",
         util:"../js/util",
@@ -17,7 +19,8 @@ requirejs.config({
         datepicker:"bootstrap-datepicker/js/bootstrap-datepicker.min",
         language:"bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min",
         teacher_list:"../js/teacher",
-        teacher_operate:"../js/operate"
+        teacher_operate:"../js/operate",
+        settings:"../js/settings"
     },
     shim:{
         bootstrap:{
@@ -28,6 +31,12 @@ requirejs.config({
         },
         language:{
             deps:["jquery","datepicker"]
+        },
+        upload:{
+            deps:["jquery"]
+        },
+        ckeditor:{
+            exports : 'CKEDITOR'
         }
     }
 });
