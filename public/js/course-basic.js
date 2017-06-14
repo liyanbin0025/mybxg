@@ -55,7 +55,7 @@ define(["jquery", "util","template","ckeditor","validate", "form","validate","fo
                                 console.log(data);
                                 if (data.code==200) {
 
-                                    location.href="/course/picture?tc_id="+data.result.cs_id;
+                                    location.href="/course/picture?cs_id="+data.result.cs_id;
                                 }
                             }
                         });
