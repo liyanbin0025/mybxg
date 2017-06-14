@@ -19,7 +19,7 @@ define(["jquery","template","ckeditor","util","datepicker","language","upload","
                 buttonText:"",
                 itemTemplate:"<span></span>",
                 fileObjName:"tc_avatar",
-                swf : '/public/assets/uploadify/uploadify.swf',
+                swf : '/public/assets/upload/uploadify.swf',
                 uploader:"/api/uploader/avatar",
                 onUploadSuccess: function (file,data) {
                     console.log(123);

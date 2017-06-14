@@ -7,6 +7,7 @@ requirejs.config({
         common:"../js/common",
         region:"jquery-region/jquery.region",
         ckeditor:"ckeditor/ckeditor",
+        jcrop:"jcrop/js/Jcrop",
         //echarts:"echarts/echarts.min",
         login:"../js/login",
         util:"../js/util",
@@ -23,7 +24,9 @@ requirejs.config({
         settings:"../js/settings",
         courseadd:"../js/course-add",
         coursebasic:"../js/course-basic",
-        courselist:"../js/course-list"
+        courselist:"../js/course-list",
+        coursepicture:"../js/course-picture",
+        courselesson:"../js/course-lesson"
     },
     shim:{
         bootstrap:{
@@ -40,6 +43,9 @@ requirejs.config({
         },
         ckeditor:{
             exports : 'CKEDITOR'
+        },
+        jcrop:{
+            deps : ["jquery"]
         }
     }
 });
